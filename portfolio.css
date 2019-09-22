@@ -1,4 +1,22 @@
 body {
 	background-color: #F6E8E5;
 	font-family: 'Verdana';
+	color: #333333;
+}
+
+.headers {
+	font-size: 60px;
+	font-style: bold;
+}
+
+.home-text {
+	font-size: 40px;
+}
+
+#home-link {
+	text-decoration: none;
+}
+
+#home-link:hover {
+	text-decoration: underline;
 }
