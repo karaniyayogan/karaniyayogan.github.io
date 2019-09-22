@@ -15,7 +15,7 @@ html, body {
 	position: relative;
 	min-height: 100%;
 }
-#content-home{
+.content-position{
 	bottom: 7%;
 	left: 6%;
 	position: absolute;
@@ -38,4 +38,45 @@ html, body {
 
 #home-link:hover {
 	text-decoration: underline;
+}
+
+#content-about {
+	width: 600px;
+	top: 10%;
+	left: 45%;
+	margin-right: 10%;
+	font-size: 20px;
+	text-align: justify;
+	text-justify: inter-word;
+	position: absolute;
+}
+
+#menu a:after {
+	content: "";
+	display: block;
+	height: 10px;
+	width: 1px;
+}
+
+.menu-label {
+	font-size: 20px;
+	text-decoration: none;
+	color: #333333;
+}
+
+.menu-label:hover {
+	text-decoration: underline;
+}
+#menu {
+	top: 30%;
+	left: 6%;
+	position: relative;
+}
+
+.active {
+	text-decoration: underline;
+}
+
+.active:hover {
+	text-decoration: none;
 }
