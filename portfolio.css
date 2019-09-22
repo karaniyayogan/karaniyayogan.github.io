@@ -8,11 +8,13 @@ body {
 	font-size: 60px;
 	font-weight: bold;
 	padding-top: 10%;
+	padding-bottom: 0;
 }
 
 .home-text {
 	font-size: 40px;
 	padding-top: 10%;
+	padding-bottom: 0;
 }
 
 #home-link {
