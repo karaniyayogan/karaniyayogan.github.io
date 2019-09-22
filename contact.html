@@ -21,13 +21,21 @@
 			<label for="subject">subject</label>
 			<input type="text" name="*subject" id="subject" placeholder="Subject" />
 			<label for="message">message</label>
-			<textarea type="text" id="message" name="message" placeholder="Message" required></textarea>
+			<textarea type="text" id="message" name="message" placeholder="Message" rows="3" required></textarea>
 			<input type="submit" name="submit" id="submit-btn" />
 		</form>
 	</div>
 
 
-<script>
+<script type="text/javascript">
+	var textarea = document.getElementById("message");
+	var limit = 196; //height limit
+
+	textarea.oninput = function() {
+	  textarea.style.height = "";
+	  textarea.style.height = Math.min(textarea.scrollHeight, limit) + "px";
+	};
+
 	fetch('https://www.enformed.io/r2bn1byd/', {
       method: 'POST',
       headers: {
