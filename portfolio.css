@@ -7,14 +7,17 @@ body {
 .headers {
 	font-size: 60px;
 	font-weight: bold;
+	padding-top: 10%;
 }
 
 .home-text {
 	font-size: 40px;
+	padding-top: 10%;
 }
 
 #home-link {
 	text-decoration: none;
+	color: #333333;
 }
 
 #home-link:hover {
