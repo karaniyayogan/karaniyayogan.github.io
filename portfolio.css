@@ -1,23 +1,33 @@
-body {
+html, body {
 	background-color: #F6E8E5;
 	font-family: 'Verdana';
 	color: #333333;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+
 }
 
 #title * {
 	margin:0;
 }
+#title {
+	position: relative;
+	min-height: 100%;
+}
+#content-home{
+	bottom: 0;
+	position: absolute;
+}
 .headers {
 	font-size: 60px;
 	font-weight: bold;
-	padding-top: 10%;
-	padding-bottom: 0;
+	padding:0;
 }
 
 .home-text {
 	font-size: 40px;
-	padding-top: 10%;
-	padding-bottom: 0;
+	padding: 0;
 }
 
 #home-link {
