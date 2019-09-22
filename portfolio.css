@@ -4,6 +4,9 @@ body {
 	color: #333333;
 }
 
+#title * {
+	margin:0;
+}
 .headers {
 	font-size: 60px;
 	font-weight: bold;
