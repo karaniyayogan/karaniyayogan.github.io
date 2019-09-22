@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="portfolio.css">
+</head>
+<body>
+	<p class="headers content-position">contact</p>
+	<div id="menu">
+		<a href="index.html" class="menu-label">home</a>
+		<a href="about.html" class="menu-label">about</a>
+		<a href="portfolio.html" class="menu-label">portfolio</a>
+		<a href="contact.html" class="menu-label active">contact</a>
+	</div>
+
+	<div id="contact">
+		<form action="https://www.enformed.io/r2bn1byd" method="POST">
+			<label for="name">name me (required)</label>
+			<input type="text" name="name" id="name" placeholder="Name" required />
+			<label for="email">email (required)</label>
+			<input type="email" name="email" placeholder="Email" id="email" required />
+			<label for="subject">subject</label>
+			<input type="text" name="*subject" id="subject" placeholder="Subject" />
+			<label for="message">message</label>
+			<textarea type="text" id="message" name="message" placeholder="Message" required></textarea>
+			<input type="submit" name="submit" id="submit-btn" />
+		</form>
+	</div>
+
+
+<script>
+	fetch('https://www.enformed.io/r2bn1byd/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify(your_data)
+    })
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(error => console.log(err));
+
+</script>
+</body>
+</html>
