@@ -119,6 +119,7 @@ label, input, textarea {
 
 label {
 	padding-top: 5px;
+	font-weight: bold; 
 }
 
 #submit-btn {
